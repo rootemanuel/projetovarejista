@@ -3,17 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209B73D8D27EFA39D1091099 /* Pods_provamovelvarejista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2126649BB8BAA09D3BB3CBD3 /* Pods_provamovelvarejista.framework */; };
+		722EDB6B08B051C411A7BCD2 /* Pods_provamovelvarejista_provamovelvarejistaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF771410B400CDF0817DC6F /* Pods_provamovelvarejista_provamovelvarejistaUITests.framework */; };
+		A0008D6525649A9500240706 /* ItensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0008D6425649A9500240706 /* ItensTableViewController.swift */; };
+		A0008D6825649AE900240706 /* ItensTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0008D6625649AE900240706 /* ItensTableViewCell.swift */; };
+		A0008D6925649AE900240706 /* ItensTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0008D6725649AE900240706 /* ItensTableViewCell.xib */; };
 		A0207B2B25648DDC003C30EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0207B2A25648DDC003C30EB /* AppDelegate.swift */; };
-		A0207B2D25648DDC003C30EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0207B2C25648DDC003C30EB /* ViewController.swift */; };
+		A0207B2D25648DDC003C30EB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0207B2C25648DDC003C30EB /* RootViewController.swift */; };
 		A0207B3025648DDC003C30EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0207B2E25648DDC003C30EB /* Main.storyboard */; };
 		A0207B3225648DDC003C30EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0207B3125648DDC003C30EB /* Assets.xcassets */; };
 		A0207B3525648DDC003C30EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0207B3325648DDC003C30EB /* LaunchScreen.storyboard */; };
 		A0207B4025648DDD003C30EB /* provamovelvarejistaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0207B3F25648DDD003C30EB /* provamovelvarejistaTests.swift */; };
 		A0207B4B25648DDD003C30EB /* provamovelvarejistaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0207B4A25648DDD003C30EB /* provamovelvarejistaUITests.swift */; };
+		A0D2266F2564B5B600277262 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D2266E2564B5B600277262 /* CheckoutViewController.swift */; };
+		C4879E880007BFF14858738B /* Pods_provamovelvarejistaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE262396819D0DFA118603D /* Pods_provamovelvarejistaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C843CD73981242A5C097538 /* Pods-provamovelvarejistaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-provamovelvarejistaTests.release.xcconfig"; path = "Target Support Files/Pods-provamovelvarejistaTests/Pods-provamovelvarejistaTests.release.xcconfig"; sourceTree = "<group>"; };
+		2126649BB8BAA09D3BB3CBD3 /* Pods_provamovelvarejista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_provamovelvarejista.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B940F9B7EF95A8DD7AE47BE /* Pods-provamovelvarejista-provamovelvarejistaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-provamovelvarejista-provamovelvarejistaUITests.release.xcconfig"; path = "Target Support Files/Pods-provamovelvarejista-provamovelvarejistaUITests/Pods-provamovelvarejista-provamovelvarejistaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57EB07BAFA1361C7C760FA49 /* Pods-provamovelvarejistaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-provamovelvarejistaTests.debug.xcconfig"; path = "Target Support Files/Pods-provamovelvarejistaTests/Pods-provamovelvarejistaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7128F323093482643911E679 /* Pods-provamovelvarejista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-provamovelvarejista.debug.xcconfig"; path = "Target Support Files/Pods-provamovelvarejista/Pods-provamovelvarejista.debug.xcconfig"; sourceTree = "<group>"; };
+		827DFC57B8353A4AA7506FA2 /* Pods-provamovelvarejista-provamovelvarejistaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-provamovelvarejista-provamovelvarejistaUITests.debug.xcconfig"; path = "Target Support Files/Pods-provamovelvarejista-provamovelvarejistaUITests/Pods-provamovelvarejista-provamovelvarejistaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FE262396819D0DFA118603D /* Pods_provamovelvarejistaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_provamovelvarejistaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0008D6425649A9500240706 /* ItensTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItensTableViewController.swift; sourceTree = "<group>"; };
+		A0008D6625649AE900240706 /* ItensTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItensTableViewCell.swift; sourceTree = "<group>"; };
+		A0008D6725649AE900240706 /* ItensTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItensTableViewCell.xib; sourceTree = "<group>"; };
 		A0207B2725648DDC003C30EB /* provamovelvarejista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = provamovelvarejista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0207B2A25648DDC003C30EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0207B2C25648DDC003C30EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0207B2C25648DDC003C30EB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		A0207B2F25648DDC003C30EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0207B3125648DDC003C30EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0207B3425648DDC003C30EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +64,9 @@
 		A0207B4625648DDD003C30EB /* provamovelvarejistaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = provamovelvarejistaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0207B4A25648DDD003C30EB /* provamovelvarejistaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = provamovelvarejistaUITests.swift; sourceTree = "<group>"; };
 		A0207B4C25648DDD003C30EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D2266E2564B5B600277262 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		E3CDE09A8A857983D8B835AB /* Pods-provamovelvarejista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-provamovelvarejista.release.xcconfig"; path = "Target Support Files/Pods-provamovelvarejista/Pods-provamovelvarejista.release.xcconfig"; sourceTree = "<group>"; };
+		EBF771410B400CDF0817DC6F /* Pods_provamovelvarejista_provamovelvarejistaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_provamovelvarejista_provamovelvarejistaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209B73D8D27EFA39D1091099 /* Pods_provamovelvarejista.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4879E880007BFF14858738B /* Pods_provamovelvarejistaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722EDB6B08B051C411A7BCD2 /* Pods_provamovelvarejista_provamovelvarejistaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53BD93FD2F3F88F6D1916122 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7128F323093482643911E679 /* Pods-provamovelvarejista.debug.xcconfig */,
+				E3CDE09A8A857983D8B835AB /* Pods-provamovelvarejista.release.xcconfig */,
+				827DFC57B8353A4AA7506FA2 /* Pods-provamovelvarejista-provamovelvarejistaUITests.debug.xcconfig */,
+				4B940F9B7EF95A8DD7AE47BE /* Pods-provamovelvarejista-provamovelvarejistaUITests.release.xcconfig */,
+				57EB07BAFA1361C7C760FA49 /* Pods-provamovelvarejistaTests.debug.xcconfig */,
+				0C843CD73981242A5C097538 /* Pods-provamovelvarejistaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A0207B1E25648DDB003C30EB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,8 @@
 				A0207B3E25648DDD003C30EB /* provamovelvarejistaTests */,
 				A0207B4925648DDD003C30EB /* provamovelvarejistaUITests */,
 				A0207B2825648DDC003C30EB /* Products */,
+				53BD93FD2F3F88F6D1916122 /* Pods */,
+				F0B389FEAA4EC7D949FA356C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +136,15 @@
 			isa = PBXGroup;
 			children = (
 				A0207B2A25648DDC003C30EB /* AppDelegate.swift */,
-				A0207B2C25648DDC003C30EB /* ViewController.swift */,
+				A0207B2C25648DDC003C30EB /* RootViewController.swift */,
 				A0207B2E25648DDC003C30EB /* Main.storyboard */,
 				A0207B3125648DDC003C30EB /* Assets.xcassets */,
 				A0207B3325648DDC003C30EB /* LaunchScreen.storyboard */,
 				A0207B3625648DDC003C30EB /* Info.plist */,
+				A0008D6425649A9500240706 /* ItensTableViewController.swift */,
+				A0008D6625649AE900240706 /* ItensTableViewCell.swift */,
+				A0008D6725649AE900240706 /* ItensTableViewCell.xib */,
+				A0D2266E2564B5B600277262 /* CheckoutViewController.swift */,
 			);
 			path = provamovelvarejista;
 			sourceTree = "<group>";
@@ -125,6 +167,16 @@
 			path = provamovelvarejistaUITests;
 			sourceTree = "<group>";
 		};
+		F0B389FEAA4EC7D949FA356C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2126649BB8BAA09D3BB3CBD3 /* Pods_provamovelvarejista.framework */,
+				EBF771410B400CDF0817DC6F /* Pods_provamovelvarejista_provamovelvarejistaUITests.framework */,
+				8FE262396819D0DFA118603D /* Pods_provamovelvarejistaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0207B4F25648DDD003C30EB /* Build configuration list for PBXNativeTarget "provamovelvarejista" */;
 			buildPhases = (
+				1FEB9D43BE25F696E0358EF8 /* [CP] Check Pods Manifest.lock */,
 				A0207B2325648DDB003C30EB /* Sources */,
 				A0207B2425648DDB003C30EB /* Frameworks */,
 				A0207B2525648DDB003C30EB /* Resources */,
+				8017434464311112B80BFAB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0207B5225648DDD003C30EB /* Build configuration list for PBXNativeTarget "provamovelvarejistaTests" */;
 			buildPhases = (
+				C9CA0D7CD713F863C26FB96E /* [CP] Check Pods Manifest.lock */,
 				A0207B3725648DDD003C30EB /* Sources */,
 				A0207B3825648DDD003C30EB /* Frameworks */,
 				A0207B3925648DDD003C30EB /* Resources */,
@@ -167,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0207B5525648DDD003C30EB /* Build configuration list for PBXNativeTarget "provamovelvarejistaUITests" */;
 			buildPhases = (
+				D65AE37C98855DFBCDF030E6 /* [CP] Check Pods Manifest.lock */,
 				A0207B4225648DDD003C30EB /* Sources */,
 				A0207B4325648DDD003C30EB /* Frameworks */,
 				A0207B4425648DDD003C30EB /* Resources */,
+				E3E325FB1BBA3D8BE9E079EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0207B3525648DDC003C30EB /* LaunchScreen.storyboard in Resources */,
+				A0008D6925649AE900240706 /* ItensTableViewCell.xib in Resources */,
 				A0207B3225648DDC003C30EB /* Assets.xcassets in Resources */,
 				A0207B3025648DDC003C30EB /* Main.storyboard in Resources */,
 			);
@@ -251,12 +309,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FEB9D43BE25F696E0358EF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-provamovelvarejista-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8017434464311112B80BFAB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-provamovelvarejista/Pods-provamovelvarejista-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-provamovelvarejista/Pods-provamovelvarejista-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-provamovelvarejista/Pods-provamovelvarejista-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9CA0D7CD713F863C26FB96E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-provamovelvarejistaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D65AE37C98855DFBCDF030E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-provamovelvarejista-provamovelvarejistaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3E325FB1BBA3D8BE9E079EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-provamovelvarejista-provamovelvarejistaUITests/Pods-provamovelvarejista-provamovelvarejistaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-provamovelvarejista-provamovelvarejistaUITests/Pods-provamovelvarejista-provamovelvarejistaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-provamovelvarejista-provamovelvarejistaUITests/Pods-provamovelvarejista-provamovelvarejistaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0207B2325648DDB003C30EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0207B2D25648DDC003C30EB /* ViewController.swift in Sources */,
+				A0008D6525649A9500240706 /* ItensTableViewController.swift in Sources */,
+				A0008D6825649AE900240706 /* ItensTableViewCell.swift in Sources */,
+				A0207B2D25648DDC003C30EB /* RootViewController.swift in Sources */,
+				A0D2266F2564B5B600277262 /* CheckoutViewController.swift in Sources */,
 				A0207B2B25648DDC003C30EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +594,7 @@
 		};
 		A0207B5025648DDD003C30EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7128F323093482643911E679 /* Pods-provamovelvarejista.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +612,7 @@
 		};
 		A0207B5125648DDD003C30EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3CDE09A8A857983D8B835AB /* Pods-provamovelvarejista.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +630,7 @@
 		};
 		A0207B5325648DDD003C30EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57EB07BAFA1361C7C760FA49 /* Pods-provamovelvarejistaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +651,7 @@
 		};
 		A0207B5425648DDD003C30EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C843CD73981242A5C097538 /* Pods-provamovelvarejistaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +672,7 @@
 		};
 		A0207B5625648DDD003C30EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 827DFC57B8353A4AA7506FA2 /* Pods-provamovelvarejista-provamovelvarejistaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +692,7 @@
 		};
 		A0207B5725648DDD003C30EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B940F9B7EF95A8DD7AE47BE /* Pods-provamovelvarejista-provamovelvarejistaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

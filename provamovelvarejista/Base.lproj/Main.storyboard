@@ -1,24 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BHv-ax-v4j">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Itens Table View Controller-->
+        <scene sceneID="drb-cM-6wc">
+            <objects>
+                <tableViewController storyboardIdentifier="itensTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vjg-uT-65a" customClass="ItensTableViewController" customModule="provamovelvarejista" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="6" sectionHeaderHeight="28" sectionFooterHeight="28" id="AT5-lN-eJw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.98907643560000003" green="0.83877935390000002" blue="0.79033897610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" focusStyle="custom" rowHeight="6" id="ej6-Qb-P4B">
+                                <rect key="frame" x="0.0" y="28" width="414" height="6"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ej6-Qb-P4B" id="CHZ-cx-vrf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="5.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.98907643560000003" green="0.83877935390000002" blue="0.79033897610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Vjg-uT-65a" id="VoK-Y5-VE2"/>
+                            <outlet property="delegate" destination="Vjg-uT-65a" id="kEJ-F9-olZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="rrj-eP-8SL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOH-2K-LrJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2744.9275362318845" y="91.741071428571431"/>
+        </scene>
+        <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="provamovelvarejista" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpc-99-bcQ">
+                                <rect key="frame" x="20" y="351" width="374" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provamóvel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3z-Tb-j8K">
+                                <rect key="frame" x="87" y="44" width="226" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="YaA-bo-5N4"/>
+                                    <constraint firstAttribute="height" constant="250" id="hL6-Z6-Ngu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Varejista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPt-SL-4bn">
+                                <rect key="frame" x="147" y="79" width="226" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="lYV-8a-WL5"/>
+                                    <constraint firstAttribute="width" constant="226" id="snB-ah-bU8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRi-tt-Ai6">
+                                <rect key="frame" x="20" y="419" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="meuemail@email.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qD-oC-6IR">
+                                <rect key="frame" x="20" y="380" width="374" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="minha"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDa-Me-vTV">
+                                <rect key="frame" x="20" y="448" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGa-4u-P0E">
+                                <rect key="frame" x="20" y="500" width="374" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y2Q-5W-H0G"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu a senha ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfv-cJ-d7h">
+                                <rect key="frame" x="20" y="601" width="374" height="25"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98907643560000003" green="0.83877935385447056" blue="0.790338976072822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zfv-cJ-d7h" secondAttribute="trailing" constant="20" id="1Mk-4P-PkC"/>
+                            <constraint firstItem="rDa-Me-vTV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7tF-pO-270"/>
+                            <constraint firstItem="a3z-Tb-j8K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="865-35-EE4"/>
+                            <constraint firstItem="IRi-tt-Ai6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="375" id="99s-h2-6yo"/>
+                            <constraint firstItem="gpc-99-bcQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9qJ-tj-fJk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IRi-tt-Ai6" secondAttribute="trailing" constant="20" id="G2F-f9-Vaq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rDa-Me-vTV" secondAttribute="trailing" constant="20" id="HFJ-ax-0G8"/>
+                            <constraint firstItem="a3z-Tb-j8K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Ksf-l0-txB"/>
+                            <constraint firstItem="MPt-SL-4bn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="Lhp-A7-eLJ"/>
+                            <constraint firstItem="rDa-Me-vTV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="404" id="MeN-IK-wKp"/>
+                            <constraint firstItem="IRi-tt-Ai6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NrO-XJ-x0U"/>
+                            <constraint firstItem="lGa-4u-P0E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="456" id="azR-Jt-pdb"/>
+                            <constraint firstItem="gpc-99-bcQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="307" id="dnM-Du-myt"/>
+                            <constraint firstItem="Zfv-cJ-d7h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="557" id="gw0-c8-xtd"/>
+                            <constraint firstItem="MPt-SL-4bn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="hzH-aC-KLf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gpc-99-bcQ" secondAttribute="trailing" constant="20" id="isO-iW-foq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8qD-oC-6IR" secondAttribute="trailing" constant="20" id="juN-Y7-Fsv"/>
+                            <constraint firstItem="lGa-4u-P0E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lcH-IW-pAx"/>
+                            <constraint firstItem="8qD-oC-6IR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="336" id="qxG-qX-y1C"/>
+                            <constraint firstItem="8qD-oC-6IR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="t5j-Cg-OzM"/>
+                            <constraint firstItem="Zfv-cJ-d7h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="v0P-3N-Fi4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lGa-4u-P0E" secondAttribute="trailing" constant="20" id="yj5-hF-hiW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bdu-4j-B4C"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="92.410714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FLM-Pe-glr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="81U-Di-c5C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o7v-du-9E4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vjg-uT-65a" kind="relationship" relationship="rootViewController" id="PIS-AO-7AY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3p-0X-z0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834.7826086956522" y="91.741071428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Upk-R0-6C6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BHv-ax-v4j" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aVa-bN-UCr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="apy-2P-U8P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1Y-6r-mmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+        </scene>
+        <!--Checkout View Controller-->
+        <scene sceneID="Nq6-AE-I8s">
+            <objects>
+                <viewController storyboardIdentifier="checkoutViewController" id="bVl-57-dzI" customClass="CheckoutViewController" customModule="provamovelvarejista" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YjG-5A-F64">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maF-0q-GJ6">
+                                <rect key="frame" x="20" y="500" width="374" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
+                                <state key="normal" title="Agendar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAgendar:" destination="bVl-57-dzI" eventType="touchUpInside" id="xY8-2t-KCb"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gX1-Um-ZMd">
+                                <rect key="frame" x="0.0" y="228" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="627357046.22737002">
+                                    <!--2020-11-18 01:50:46 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Iz6-Ew-r6B" firstAttribute="trailing" secondItem="maF-0q-GJ6" secondAttribute="trailing" constant="20" id="C3w-Tr-aA4"/>
+                            <constraint firstItem="maF-0q-GJ6" firstAttribute="top" secondItem="YjG-5A-F64" secondAttribute="topMargin" constant="456" id="hYI-SF-gwh"/>
+                            <constraint firstItem="maF-0q-GJ6" firstAttribute="leading" secondItem="Iz6-Ew-r6B" secondAttribute="leading" constant="20" id="j4h-fY-g1X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iz6-Ew-r6B"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rtw-on-jYc"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="gX1-Um-ZMd" id="ni9-zr-VCf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bs4-Q4-M7s" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4530" y="92"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cq8-18-gu7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TNY-2T-5dx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1nZ-Xf-6Uy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bVl-57-dzI" kind="relationship" relationship="rootViewController" id="pWK-0F-uzU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pzR-DN-cfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3620" y="92"/>
         </scene>
     </scenes>
 </document>

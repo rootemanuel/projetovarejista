@@ -1,0 +1,6 @@
+framework module Pods_provamovelvarejista_provamovelvarejistaUITests {
+  umbrella header "Pods-provamovelvarejista-provamovelvarejistaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
